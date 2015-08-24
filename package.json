@@ -1,0 +1,30 @@
+{
+  "name": "trfx2 frontend developer tools",
+  "version": "0.0.1",
+  "description": "trfx2",
+  "dependencies": {
+    "include-all": "^0.1.6"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.13.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^1.1.2",
+    "less-plugin-clean-css": "^1.5.1"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "postinstall": "grunt bower"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darielnoel/everymundo-frontend-tasks.git"
+  },
+  "keywords": [
+    "everymundo"
+  ],
+  "author": "EveryMundo Dev Team <devteam@everymundo.com>",
+  "license": "ISC"
+}
