@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 	grunt.config.set('watch', {
 		default:{
 		    files: [grunt.REPOSITORY_PATH  + 'src/EM/TrfxBundle/Resources/public/less-trfx/**/*.less'],
-		    tasks: ['less:default', 'cssmin:default', 'compileAssets']	
+		    tasks: ['less:default', 'cssmin:default', 'less:a3', 'cssmin:a3', 'compileAssets']	
 		},
 		a3:{
 		    files: [grunt.REPOSITORY_PATH  + 'src/EM/TrfxBundle/Resources/public/less/**/*.less'],
@@ -31,8 +31,9 @@ module.exports = function(grunt) {
 		    tasks: ['less:airberlin', 'cssmin:airberlin', 'compileAssets']			
 		},
 		alitalia:{
-		    files: [grunt.REPOSITORY_PATH  + 'src/EM/azTrfxBundle/Resources/public/less-framework/**/*.less'],
-		    tasks: ['less:alitalia', 'cssmin:alitalia', 'compileAssets']			
+		    files: [grunt.REPOSITORY_PATH  + 'src/EM/azTrfxBundle/Resources/public/less-trfx/**/*.less'],
+		    //tasks: ['less:alitalia', 'cssmin:alitalia', 'uglify:alitalia', 'compileAssets'],
+		    tasks: ['less:alitalia', 'cssmin:alitalia', 'compileAssets']
 		},
 		aereomexico:{
 		    files: [grunt.REPOSITORY_PATH  + 'src/EM/amTrfxBundle/Resources/public/less-framework-trfx/**/*.less'],
@@ -45,7 +46,11 @@ module.exports = function(grunt) {
 			],
 
 			// When assets are changed:
-			tasks: ['compileAssets']
+			tasks: ['compileAssets'],
+		    options: {
+      			livereload: true,
+    		}
+
 		}
 	});
 

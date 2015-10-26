@@ -63,8 +63,8 @@ module.exports = function(grunt) {
     },
     // Alitalia Bundle
     alitalia:{
-      src: 'azTrfxBundle/Resources/public/less-framework/bootstrap.less',
-      dest: 'src/EM/azTrfxBundle/Resources/public/css-framework/'
+      src: 'azTrfxBundle/Resources/public/less-trfx/trfx.less',
+      dest: 'src/EM/azTrfxBundle/Resources/public/css-trfx/'
     },
     // Aereomexico Bundle
     aereomexico:{
